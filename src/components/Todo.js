@@ -1,6 +1,19 @@
 import React from 'react';
+import { FaEraser } from 'react-icons/fa';
+import { RiCheckboxFill, RiDeleteBack2Fill, RiCheckboxIndeterminateFill } from 'react-icons/ri';
+import { BiRedo } from 'react-icons/bi';
+import { CgTrash, CgCheck, CgPlayListCheck, CgRedo } from 'react-icons/cg';
+import { MdCheck } from 'react-icons/md';
 
-const Todo = ({ text, todo, setTodos, todos }) => {
+
+
+import './Todo.css'
+
+
+
+
+
+const Todo = ({ text, todo, setTodos, todos, who }) => {
 
     //Events
 
@@ -21,13 +34,21 @@ const Todo = ({ text, todo, setTodos, todos }) => {
 
     return(
         <div className="todo">
-            <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
-            <button onClick={completeHandler} className="complete-btn">
-                <i className="fas fa-check"></i>
-            </button>
-            <button onClick={deleteHandler} className="trash-btn">
-                <i className="fas fa-trash"></i>
-            </button>
+            <div className="todo-flex">
+                <li className={`todo-item ${todo.completed ? "completed" : ''}`}>• {text}</li>
+            </div>
+            <div className="todoWho-flex">
+                <li className={`todo-item ${todo.completed ? "completed" : ''}`}> {who}</li>
+            </div>
+            <div className="todoBtns-flex">
+                <button onClick={completeHandler} className="complete-btn">
+                    <MdCheck className={`todo-item ${todo.completed ? "display" : ''}`}/>
+                    <CgRedo className={`todo-item ${todo.completed ? '' : 'display'}`}/>
+                </button>
+                <button onClick={deleteHandler} className="trash-btn">
+                    <CgTrash />
+                </button>
+            </div>
         </div>
     );
 }
