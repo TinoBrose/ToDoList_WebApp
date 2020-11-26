@@ -1,4 +1,6 @@
 import React from 'react';
+import './TodoList.css'
+
 //import component
 import Todo from './Todo';
 
@@ -12,7 +14,8 @@ const TodoList = ({ todos, setTodos, filteredTodos }) => {
                         todos={todos} 
                         key={todo.id}
                         todo={todo} 
-                        text={todo.text} />
+                        text={todo.text}
+                        who={todo.who} />
                 ))} 
             </ul> 
         </div>

@@ -9,6 +9,7 @@ function App() {
 
   //state variables
   const [inputText, setInputText] = useState("");
+  const [inputWho, setInputWho] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
@@ -18,12 +19,13 @@ function App() {
     getLocalTodos();
   }, []);
 
-  //useEffect
+  //useEffect filterHandler done
   useEffect(() => {
     filterHandler();
     saveLocalTodos();
   }, [todos, status]);
 
+  
   //use effectfunctions
   const filterHandler = () => {
     switch(status){
@@ -62,11 +64,14 @@ function App() {
       <main>
         <Form 
         inputText={inputText}
+        inputWho={inputWho}
         todos={todos} 
         setTodos={setTodos} 
         setInputText={setInputText}
+        setInputWho={setInputWho}
         setStatus={setStatus}
         />
+        <hr />
         <TodoList 
         setTodos={setTodos} 
         todos={todos}
