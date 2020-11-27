@@ -6,12 +6,14 @@ import TodoList from './components/TodoList';
 import Header from './components/Header';
 import About from './pages/About';
 import { Switch, Route, Link } from "react-router-dom";
+import { Container, Row } from 'reactstrap';
 
 
 function App() {
 
   //state variables
   const [inputText, setInputText] = useState("");
+  const [inputWho, setInputWho] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
@@ -21,12 +23,13 @@ function App() {
     getLocalTodos();
   }, []);
 
-  //useEffect
+  //useEffect filterHandler done
   useEffect(() => {
     filterHandler();
     saveLocalTodos();
   }, [todos, status]);
 
+  
   //use effectfunctions
   const filterHandler = () => {
     switch(status){
@@ -91,6 +94,7 @@ function App() {
            
             </Route>
             <Route path="/">
+          <Container>
               <Form 
               inputText={inputText}
               todos={todos} 
@@ -98,17 +102,19 @@ function App() {
               setInputText={setInputText}
               setStatus={setStatus}
               />
+              <hr className="hr" />
               <TodoList 
               setTodos={setTodos} 
               todos={todos}
               filteredTodos={filteredTodos}
               />
+          </Container>
             </Route>
-
+        
           </Switch>
         </main>
       </div>
-  
+
     </div>
   );
 }

@@ -1,0 +1,88 @@
+/* FORM CSS */
+
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 3rem;
+  font-family: 'Waiting for the Sunrise', cursive;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+}
+
+form input {
+  width: 20rem;
+}
+
+
+form button {
+    padding: 1.5rem 0 1.5rem 0;
+    font-size: 2rem;
+  color: rgb(207, 204, 23);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 10rem;
+
+}
+
+form button:hover {
+  transform: scale(1.3);
+
+}
+
+
+/*CUSTOM SELECTOR */
+.filter-todo {
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.123);
+    width: 10rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 1rem 0 0.5rem;
+    border-radius: 8px;
+  }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    color: rgb(207, 204, 23);
+    cursor: pointer;
+  }
+
+
+  
+  /* Custom Select */
+.select {
+    margin: 0 1rem 0 1rem;
+    position: relative;
+    color: rgb(207, 204, 23);
+    font-family: 'Waiting for the Sunrise', cursive;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+ 
+  
+  /* Filter-Icon */
+.select::after {
+    content: "\f0b0";
+    font-family: FontAwesome;
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    right: 0.6rem;
+    
+  }
+  
+  
+  /* Transition */
+  
+  .select:hover::after {
+    transform: scale(1.3);
+  }

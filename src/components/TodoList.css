@@ -1,0 +1,12 @@
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    width: 90%;
+    list-style: none;
+    font-family: 'Waiting for the Sunrise', cursive;
+
+  }
