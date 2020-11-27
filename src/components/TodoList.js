@@ -1,5 +1,7 @@
 import React from 'react';
 import './TodoList.css'
+import { Row, Col } from 'reactstrap';
+
 
 //import component
 import Todo from './Todo';

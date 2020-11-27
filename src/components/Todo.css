@@ -3,7 +3,6 @@
     /*background: white;*/
     color: white;
     font-size: 3rem;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease;
@@ -14,16 +13,9 @@
 
 }
 
-.todo-flex {
-  flex: 6;
-}
 
-.todoWho-flex {
-  flex: 2;
-}
 
 .todoBtns-flex {
-  flex: 1;
   float: right;
 }
   

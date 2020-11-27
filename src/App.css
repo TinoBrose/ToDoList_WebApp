@@ -26,6 +26,8 @@ body {
 }
 header {
   font-size: 2rem;
+  font-family: 'Waiting for the Sunrise', cursive;
+
 }
 
 header {
@@ -35,12 +37,9 @@ header {
   align-items: center;
 }
 
-main {
-  width: 70%;
-  margin: auto;
-}
 
-hr {
+
+.hr {
   display: block;
   height: 1px;
   border: 0;
@@ -48,4 +47,3 @@ hr {
   margin:  auto;
   padding: 0;
 }
-

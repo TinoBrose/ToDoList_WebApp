@@ -3,6 +3,7 @@ import './App.css';
 //importing components
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import { Container, Row } from 'reactstrap';
 
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
       <header>
         <h1>To do List</h1>
       </header>
-      <main>
+      <Container>
         <Form 
         inputText={inputText}
         inputWho={inputWho}
@@ -71,13 +72,13 @@ function App() {
         setInputWho={setInputWho}
         setStatus={setStatus}
         />
-        <hr />
+        <hr className="hr" />
         <TodoList 
         setTodos={setTodos} 
         todos={todos}
         filteredTodos={filteredTodos}
         />
-      </main>
+      </Container>
     </div>
   );
 }

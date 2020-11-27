@@ -1,6 +1,8 @@
 import React from 'react';
 import { CgTrash, CgRedo } from 'react-icons/cg';
 import { MdCheck } from 'react-icons/md';
+import { Container, Row, Col } from 'reactstrap';
+
 
 
 
@@ -30,14 +32,20 @@ const Todo = ({ text, todo, setTodos, todos, who }) => {
     };
 
     return(
-        <div className="todo">
-            <div className="todo-flex">
+        <Container>
+        <Row className="todo">
+            <Col xs="auto">
+            <div>
                 <li className={`todo-item ${todo.completed ? "completed" : ''}`}>• {text}</li>
             </div>
-            <div className="todoWho-flex">
+            </Col>
+            <Col xs="auto">
+            <div>
                 <li className={`todo-item ${todo.completed ? "completed" : ''}`}> {who}</li>
             </div>
-            <div className="todoBtns-flex">
+            </Col>
+            <Col xs="2">
+            <div>
                 <button onClick={completeHandler} className="complete-btn">
                     <MdCheck className={`todo-item ${todo.completed ? "display" : ''}`}/>
                     <CgRedo className={`todo-item ${todo.completed ? '' : 'display'}`}/>
@@ -46,7 +54,9 @@ const Todo = ({ text, todo, setTodos, todos, who }) => {
                     <CgTrash />
                 </button>
             </div>
-        </div>
+            </Col>
+        </Row>
+        </Container>
     );
 }
 
