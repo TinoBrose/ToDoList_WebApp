@@ -1,20 +1,5 @@
 /* FORM CSS */
 
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 2rem;
-}
-
-
-form input {
-  flex: 3;
-}
-
-form button {
-  flex: 1;
-}
 
 form input,
 form button {
@@ -26,14 +11,19 @@ form button {
   border: none;
 }
 
+form input {
+  width: 20rem;
+}
+
 
 form button {
-    padding-top: 1rem;
+    padding: 1.5rem 0 1.5rem 0;
     font-size: 2rem;
   color: rgb(207, 204, 23);
   cursor: pointer;
   transition: all 0.3s ease;
-  border: none;
+  width: 10rem;
+
 }
 
 form button:hover {
@@ -46,13 +36,12 @@ form button:hover {
 .filter-todo {
     font-size: 2rem;
     background-color: rgba(255, 255, 255, 0.123);
-    border: 0;
-    width: 200px;
+    width: 10rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-family: 'Waiting for the Sunrise', cursive;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem 0 0.5rem;
+    border-radius: 8px;
   }
 
 select {
@@ -63,22 +52,21 @@ select {
     outline: 0;
     box-shadow: none;
     border: 0 !important;
-    font-size: 3rem;
-    font-family: 'Waiting for the Sunrise', cursive;
     color: rgb(207, 204, 23);
     cursor: pointer;
+    background-color: transparent !important;
+
   }
 
 
   
   /* Custom Select */
 .select {
-    margin: 1rem;
+    margin: 0 1rem 0 1rem;
     position: relative;
-    overflow: hidden;
     color: rgb(207, 204, 23);
-    padding: 10px;
     font-family: 'Waiting for the Sunrise', cursive;
+    padding: 1.5rem 0 1.5rem 0;
   }
  
   
@@ -87,15 +75,11 @@ select {
     content: "\f0b0";
     font-family: FontAwesome;
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0);
     cursor: pointer;
-    pointer-events: none;
     font-size: 2rem;
     transition: all 0.3s ease;
-
+    right: 0.6rem;
+    
   }
   
   

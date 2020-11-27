@@ -3,7 +3,6 @@
     /*background: white;*/
     color: white;
     font-size: 3rem;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease;
@@ -14,16 +13,10 @@
 
 }
 
-.todo-flex {
-  flex: 3;
-}
 
-.todoWho-flex {
-  flex: 1;
-}
 
 .todoBtns-flex {
-  flex: 1;
+  float: right;
 }
   
   
@@ -35,6 +28,7 @@
     cursor: pointer;
     font-size: 2rem;
     transition: all 0.3s ease;
+    justify-content: right;
   }
 
   .trash-btn {
