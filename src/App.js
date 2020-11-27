@@ -3,6 +3,9 @@ import './App.css';
 //importing components
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import Header from './components/Header';
+import About from './pages/About';
+import { Switch, Route, Link } from "react-router-dom";
 import { Container, Row } from 'reactstrap';
 
 
@@ -59,26 +62,59 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      {/*<header>
         <h1>To do List</h1>
-      </header>
-      <Container>
-        <Form 
-        inputText={inputText}
-        inputWho={inputWho}
-        todos={todos} 
-        setTodos={setTodos} 
-        setInputText={setInputText}
-        setInputWho={setInputWho}
-        setStatus={setStatus}
-        />
-        <hr className="hr" />
-        <TodoList 
-        setTodos={setTodos} 
-        todos={todos}
-        filteredTodos={filteredTodos}
-        />
-      </Container>
+      </header>*/}
+      <Header />
+      
+      {/* 
+      <div className="NavBar">
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      */}
+      <div>
+          
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <main>
+          <Switch>
+
+            <Route path="/about">
+          
+              <About />
+           
+            </Route>
+            <Route path="/">
+          <Container>
+              <Form 
+              inputText={inputText}
+              todos={todos} 
+              setTodos={setTodos} 
+              setInputText={setInputText}
+              setStatus={setStatus}
+              />
+              <hr className="hr" />
+              <TodoList 
+              setTodos={setTodos} 
+              todos={todos}
+              filteredTodos={filteredTodos}
+              />
+          </Container>
+            </Route>
+        
+          </Switch>
+        </main>
+      </div>
+
     </div>
   );
 }
