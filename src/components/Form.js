@@ -38,10 +38,10 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus, inputWho, se
     }
 
     return(
-        <form className="testform">
-            <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" placeholder="Add to do here..."/>
-            <input value={inputWho} onChange={inputWhoHandler} type="who" className="todo-input" placeholder="Who to do it..."/>
-            <button onClick={submitTodoHandler} className="todo-button" type="submit" >
+        <form>
+            <input value={inputText} onChange={inputTextHandler} type="text" placeholder="Add to do here..."/>
+            <input value={inputWho} onChange={inputWhoHandler} type="who" placeholder="Who to do it..."/>
+            <button onClick={submitTodoHandler} type="submit" >
                 <VscAdd />
             </button>
             <div className="select">

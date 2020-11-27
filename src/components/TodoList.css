@@ -5,6 +5,6 @@
   }
   
   .todo-list {
-    min-width: 80%;
+    width: 80%;
     list-style: none;
   }

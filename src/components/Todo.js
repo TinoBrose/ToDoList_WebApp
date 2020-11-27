@@ -1,8 +1,5 @@
 import React from 'react';
-import { FaEraser } from 'react-icons/fa';
-import { RiCheckboxFill, RiDeleteBack2Fill, RiCheckboxIndeterminateFill } from 'react-icons/ri';
-import { BiRedo } from 'react-icons/bi';
-import { CgTrash, CgCheck, CgPlayListCheck, CgRedo } from 'react-icons/cg';
+import { CgTrash, CgRedo } from 'react-icons/cg';
 import { MdCheck } from 'react-icons/md';
 
 
