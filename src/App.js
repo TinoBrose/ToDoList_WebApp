@@ -7,7 +7,7 @@ import Header from './components/Header';
 import About from './pages/About';
 import { Switch, Route, Link } from "react-router-dom";
 import { Container, Row } from 'reactstrap';
-
+import Footer from './components/Footer';
 
 function App() {
 
