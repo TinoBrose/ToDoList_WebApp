@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
@@ -7,13 +7,10 @@ function Header() {
         <header>
             <Container>
             <Row className="text-center">
-                <Col><h2>Todo List</h2></Col>
-            </Row>
-            <Row className="text-center">
                 <Col className="text-center">
-                <div    iv class="topnav">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>  
+                <div className="topnav">
+                <NavLink activeStyle={{ color: "rgb(207, 204, 23)" }} to="/todo-list">Todo List</NavLink>
+                <NavLink activeStyle={{ color: "rgb(207, 204, 23)" }} to="/about">About</NavLink>  
             </div>
                 </Col>
             </Row>

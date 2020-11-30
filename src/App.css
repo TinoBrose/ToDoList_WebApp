@@ -1,11 +1,7 @@
 
-/*@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Homemade+Apple&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');*/
 
 * {
   margin: 0;
@@ -15,32 +11,22 @@
 } 
 
 body {
-  /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
   background-image: url("./images/blackboard.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  /*font-family: "Poppins", sans-serif;*/
-  /*font-family: 'Homemade Apple', cursive;*/  
-  /*font-family: 'Chilanka', cursive;*/
-  /*font-family: 'Covered By Your Grace', cursive;*/
-  /*font-family: 'Shadows Into Light Two', cursive;*/
-  font-family: 'Waiting for the Sunrise', cursive;
-  min-height: 100vh;
+   font-family: 'Waiting for the Sunrise', cursive;
+  max-height: 100vh;
 
 }
 
 header {
-  font-size: 2rem;
   color: white;
-  font-family: 'Waiting for the Sunrise', cursive;
-}
-
-header {
-  min-height: 20vh;
+  font-family: 'Patrick Hand SC', cursive;  
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0;
 }
 
 .hr {
@@ -56,6 +42,7 @@ header {
 /* SPYRIDON CSS */
 .a{
   color: white !important;
+  
 }
  
 .NavBar {
@@ -65,35 +52,33 @@ header {
 .nav {
   width: 100%;
   float: left;
-  margin: 0 0 3em 0;
   padding: 0;
-  list-style: none; }
+  list-style: none; 
+}
 
 .nav li {
   float: left; }
 
 .topnav a:hover {
-    background-color: rgba(236, 234, 234, 0.534);
-    color: black;
-}
+    color: rgb(207, 204, 23);
+    text-decoration: none;
+  }
   
 .topnav a {
     float: center;
     color: #f2f2f2;
     text-align: center;
-    padding: 8px 16px;
+    padding: 0 1rem;
+    margin: 0 1rem;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 3rem;
 }
 
-  /* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #949795;
-  color: rgb(56, 51, 51);
-}
-
-.test {
+.text-center {
   font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
+
 
 
