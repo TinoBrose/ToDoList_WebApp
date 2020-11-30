@@ -35,7 +35,6 @@ form button:hover {
 /*CUSTOM SELECTOR */
 .filter-todo {
     font-size: 2rem;
-    background-color: rgba(255, 255, 255, 0.123);
     width: 10rem;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -54,8 +53,8 @@ select {
     border: 0 !important;
     color: rgb(207, 204, 23);
     cursor: pointer;
+    background: rgb(105, 104, 104);
   }
-
 
   
   /* Custom Select */
