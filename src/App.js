@@ -3,12 +3,18 @@ import './App.css';
 //importing components
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import Header from './components/Header';
+import About from './pages/About';
+import { Switch, Route, Redirect } from "react-router-dom";
+import { Container, Row } from 'reactstrap';
+import Footer from './components/Footer';
 
 
 function App() {
 
   //state variables
   const [inputText, setInputText] = useState("");
+  const [inputWho, setInputWho] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
@@ -18,12 +24,13 @@ function App() {
     getLocalTodos();
   }, []);
 
-  //useEffect
+  //useEffect filterHandler done
   useEffect(() => {
     filterHandler();
     saveLocalTodos();
   }, [todos, status]);
 
+  
   //use effectfunctions
   const filterHandler = () => {
     switch(status){
@@ -56,23 +63,40 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>To do List</h1>
-      </header>
-      <main>
-        <Form 
-        inputText={inputText}
-        todos={todos} 
-        setTodos={setTodos} 
-        setInputText={setInputText}
-        setStatus={setStatus}
-        />
-        <TodoList 
-        setTodos={setTodos} 
-        todos={todos}
-        filteredTodos={filteredTodos}
-        />
-      </main>
+      <Header />
+      
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <main>
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/todo-list">
+              <Container>
+                  <Form 
+                  inputText={inputText}
+                  todos={todos} 
+                  setTodos={setTodos} 
+                  setInputText={setInputText}
+                  setInputWho={setInputWho}
+                  inputWho={inputWho}
+                  setStatus={setStatus}
+                  />
+                  <hr className="hr" />
+                  <TodoList 
+                  setTodos={setTodos} 
+                  todos={todos}
+                  filteredTodos={filteredTodos}
+                  />
+              </Container>
+            </Route>
+            <Redirect from="/" to="/todo-list" />
+          </Switch>
+        </main>
+        <Footer/>
+      
+
     </div>
   );
 }

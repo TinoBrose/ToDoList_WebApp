@@ -1,6 +1,18 @@
 import React from 'react';
+import { CgTrash, CgRedo } from 'react-icons/cg';
+import { MdCheck } from 'react-icons/md';
+import { Container, Row, Col } from 'reactstrap';
 
-const Todo = ({ text, todo, setTodos, todos }) => {
+
+
+
+import './Todo.css'
+
+
+
+
+
+const Todo = ({ text, todo, setTodos, todos, who }) => {
 
     //Events
 
@@ -20,15 +32,31 @@ const Todo = ({ text, todo, setTodos, todos }) => {
     };
 
     return(
-        <div className="todo">
-            <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
-            <button onClick={completeHandler} className="complete-btn">
-                <i className="fas fa-check"></i>
-            </button>
-            <button onClick={deleteHandler} className="trash-btn">
-                <i className="fas fa-trash"></i>
-            </button>
-        </div>
+        <Container>
+        <Row className="todo">
+            <Col xs="auto">
+            <div>
+                <li className={`todo-item ${todo.completed ? "completed" : ''}`}>• {text}</li>
+            </div>
+            </Col>
+            <Col xs="auto">
+            <div>
+                <li className={`todo-item ${todo.completed ? "completed" : ''}`}> {who}</li>
+            </div>
+            </Col>
+            <Col xs="2">
+            <div>
+                <button onClick={completeHandler} className="complete-btn">
+                    <MdCheck className={`todo-item ${todo.completed ? "display" : ''}`}/>
+                    <CgRedo className={`todo-item ${todo.completed ? '' : 'display'}`}/>
+                </button>
+                <button onClick={deleteHandler} className="trash-btn">
+                    <CgTrash />
+                </button>
+            </div>
+            </Col>
+        </Row>
+        </Container>
     );
 }
 

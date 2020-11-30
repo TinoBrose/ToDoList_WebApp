@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+.main-footer {
+   position: absolute;
+   font-family: sans-serif;
+   color: white;
+   padding-top: 3em;
+   bottom: 0;
+   width: 100%;
+  }
+
+  .main-footer div {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+
+  
+  .main-about {
+    position: fixed;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 3em;
+    bottom: 0;
+    margin-bottom: 3rem;
+    width: 100%;
+   }
+ 
+   .main-about div {
+     font-family: 'Patrick Hand SC', cursive;
+    font-size: 1.1rem;
+     text-align: center;
+     letter-spacing: 0.1rem;
+   }
+  
