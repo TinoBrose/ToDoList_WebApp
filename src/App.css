@@ -5,17 +5,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Architects Daughter', cursive;
-}
+  
+} 
+
 body {
   /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
-  background-image: url(./images/blackboard.webp);
+  background-image: url("./images/blackboard.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -23,11 +24,12 @@ body {
   /*font-family: 'Homemade Apple', cursive;*/  
   /*font-family: 'Chilanka', cursive;*/
   /*font-family: 'Covered By Your Grace', cursive;*/
-
   /*font-family: 'Shadows Into Light Two', cursive;*/
   font-family: 'Waiting for the Sunrise', cursive;
   min-height: 100vh;
+
 }
+
 header {
   font-size: 2rem;
   color: white;
@@ -40,8 +42,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .hr {
   display: block;
@@ -68,24 +68,23 @@ header {
   margin: 0 0 3em 0;
   padding: 0;
   list-style: none; }
+
 .nav li {
   float: left; }
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color: rgba(236, 234, 234, 0.534);
     color: black;
+}
   
-
-  }
-  
-  .topnav a {
+.topnav a {
     float: center;
     color: #f2f2f2;
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
     font-size: 20px;
-  }
+}
 
   /* Add a color to the active/current link */
 .topnav a.active {
@@ -96,4 +95,5 @@ header {
 .test {
   font-family: 'Waiting for the Sunrise', cursive;
 }
+
 

@@ -41,9 +41,6 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus, inputWho, se
         setStatus(e.target.value);
     }
 
-
-    
-
     return(
         <form>
             <Row>
