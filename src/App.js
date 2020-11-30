@@ -9,6 +9,7 @@ import { Switch, Route, Link } from "react-router-dom";
 import { Container, Row } from 'reactstrap';
 import Footer from './components/Footer';
 
+
 function App() {
 
   //state variables
