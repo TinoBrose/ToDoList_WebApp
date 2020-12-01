@@ -45,10 +45,10 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus, inputWho, se
         <form>
             <Row>
             <Col md>
-                <input value={inputText} onChange={inputTextHandler} type="text" placeholder="Add to do here..."/>
+                <input value={inputText} onChange={inputTextHandler} type="text" placeholder="Task ..."/>
             </Col>
             <Col md>
-                <input value={inputWho} onChange={inputWhoHandler} type="who" placeholder="Who to do it..."/>
+                <input value={inputWho} onChange={inputWhoHandler} type="who" placeholder="Assign to ..."/>
             </Col>
             <Col md="2">
                 <button onClick={submitTodoHandler} type="submit" >

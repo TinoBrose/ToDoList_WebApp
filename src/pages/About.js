@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
+import img from '../images/done.gif'
 
  function About() {
     return (
@@ -10,7 +11,9 @@ import { Container, Row, Col } from 'reactstrap';
                 <Col md={8}>
                     <div className="text-center">
                     <p>This is the Group 5 To-do-list Project.</p> 
-
+                    <div className="p-5">
+                        <img src={img}></img>
+                    </div>
                     </div>
                 </Col>
                 <Col md={2}></Col>
