@@ -30,8 +30,10 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus, inputWho, se
                 text: inputText, 
                 completed: false, 
                 id: Math.random() * 1000}, 
-        ])}; // setTodos creates todos with spread todos (...todos means if there were todos before they will get passed aswell) plus new todos with the todo being added, completed (false by default) and a random ID between 1 - 1000
-        
+        ])} // setTodos creates todos with spread todos (...todos means if there were todos before they will get passed aswell) plus new todos with the todo being added, completed (false by default) and a random ID between 1 - 1000
+        else {
+            alert("Please add a task!")
+        };
         setInputText(""); //to reset the state to "empty string" in the form component
         setInputWho(""); //to reset the state to "empty string" in the form component
     };
