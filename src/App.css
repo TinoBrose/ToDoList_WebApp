@@ -1,28 +1,22 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-} 
+}
 
 body {
   background-image: url("./images/blackboard.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-   font-family: 'Waiting for the Sunrise', cursive;
-  max-height: 100vh;
-
+  font-family: "Waiting for the Sunrise", cursive;
 }
 
 header {
   color: white;
-  font-family: 'Patrick Hand SC', cursive;  
+  font-family: "Patrick Hand SC", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,17 +28,16 @@ header {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin:  auto;
+  margin: auto;
   padding: 0;
 }
 */
 
 /* SPYRIDON CSS */
-.a{
+.a {
   color: white !important;
-  
 }
- 
+
 .NavBar {
   color: white !important;
 }
@@ -53,32 +46,30 @@ header {
   width: 100%;
   float: left;
   padding: 0;
-  list-style: none; 
+  list-style: none;
 }
 
 .nav li {
-  float: left; }
+  float: left;
+}
 
 .topnav a:hover {
-    color: rgb(207, 204, 23);
-    text-decoration: none;
-  }
-  
+  color: rgb(207, 204, 23);
+  text-decoration: none;
+}
+
 .topnav a {
-    float: center;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0 1rem;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-size: 3rem;
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 3rem;
 }
 
 .text-center {
-  font-family: 'Waiting for the Sunrise', cursive;
+  font-family: "Waiting for the Sunrise", cursive;
   font-size: 2rem;
   margin-top: 2rem;
 }
-
-
-

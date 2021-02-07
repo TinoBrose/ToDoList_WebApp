@@ -1,6 +1,6 @@
 {
-  "homepage": "https://tinob-92.github.io/To-do-list/",
-  "name": "todo-list-new",
+  "homepage": "./",
+  "name": "todo-list-webapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

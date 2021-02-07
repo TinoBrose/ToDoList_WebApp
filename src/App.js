@@ -4,10 +4,8 @@ import './App.css';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 import Header from './components/Header';
-import About from './pages/About';
 import { Switch, Route, Redirect } from "react-router-dom";
-import { Container, Row } from 'reactstrap';
-import Footer from './components/Footer';
+import { Container } from 'reactstrap';
 
 
 function App() {
@@ -69,9 +67,6 @@ function App() {
             renders the first one that matches the current URL. */}
         <main>
           <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
             <Route path="/todo-list">
               <Container>
                   <Form 
@@ -94,7 +89,6 @@ function App() {
             <Redirect from="/" to="/todo-list" />
           </Switch>
         </main>
-        <Footer/>
       
 
     </div>

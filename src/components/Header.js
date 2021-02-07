@@ -10,7 +10,7 @@ function Header() {
                 <Col className="text-center">
                 <div className="topnav">
                 <NavLink activeStyle={{ color: "rgb(207, 204, 23)" }} to="/todo-list">Todo List</NavLink>
-                <NavLink activeStyle={{ color: "rgb(207, 204, 23)" }} to="/about">About</NavLink>  
+                {/* <NavLink activeStyle={{ color: "rgb(207, 204, 23)" }} to="/about">About</NavLink>   */}
             </div>
                 </Col>
             </Row>

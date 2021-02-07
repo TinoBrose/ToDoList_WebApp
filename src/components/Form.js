@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import Dropdownfilter from './Dropdownfilter';
+import React from 'react';
 import { VscAdd } from 'react-icons/vsc';
 import { Row, Col } from 'reactstrap';
-
 
 import './Form.css'
 
@@ -54,7 +52,7 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus, inputWho, se
             </Col>
             <Col md="2">
                 <button onClick={submitTodoHandler} type="submit" >
-                    <VscAdd />
+                    Add todo
                 </button>
             </Col>
             <Col md="auto">

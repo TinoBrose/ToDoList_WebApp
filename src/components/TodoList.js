@@ -1,7 +1,5 @@
 import React from 'react';
 import './TodoList.css'
-import { Row, Col } from 'reactstrap';
-
 
 //import component
 import Todo from './Todo';
@@ -21,7 +19,6 @@ const TodoList = ({ todos, setTodos, filteredTodos }) => {
                 ))} 
             </ul> 
         </div>
-        /*use map() method on todos to loop through every single todo being rendered*/
     )
 }
 
